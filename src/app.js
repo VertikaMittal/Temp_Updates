@@ -13,10 +13,10 @@ app.get("/",(req,res)=>{
     res.render("index");
 })
 app.get("/about",(req,res)=>{
-    res.send("about");
+    res.render("about");
 })
 app.get("/weather",(req,res)=>{
-    res.send("weather");
+    res.render("weather");
 })
 app.get("*",(req,res)=>{
     res.send("404 error");
