@@ -1,3 +1,28 @@
 <%- include('partials/header'); -%>
+<div class="container-fluid main_header">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="main_content">
+                <form action="" class="temp_form">
+                    <input type="text" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+                    <input type="submit" id="smtbtn" value="search">
+                </form>
+            </div>  
+            <div class="tempinfo">
+                <div class="toplayer"> 
+                    <p class="day"><%= day %></p>
+                    <p class="date"><%= date %> <%= month %></p>
+                </div>
+                <div class="mainlayer">
+                    <p class="cityname"><%= cityname %></p>
+                    <div class="midlayer data_hide">
+                        <p id="temp"><span><%= citytemp %></span><sup>0</sup>C</p>
+                        <p id="temp_status"><i></i></p>
+                    </div>
+                </div>
+            </div>
+</div>
+
+</div>
 
 <%- include('partials/footer'); -%>
